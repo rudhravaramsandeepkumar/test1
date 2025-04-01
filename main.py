@@ -240,6 +240,9 @@ def upload_prescription1():
 
 
 @app.route('/upload-prescriptiontest3', methods=['POST'])
+=======
+@app.route('/upload-prescriptiontest4', methods=['POST'])
+>>>>>>> 260551b7c2bc5109f6a8c6f46feb2a40f2e83a8c
 def upload_prescription1():
     if 'file' not in request.files:
         return jsonify({"error": "No file provided"}), 400
