@@ -239,6 +239,14 @@ def upload_prescription1():
     return jsonify({"message": "Uploaded successfully", "path": filepath}), 200
 
 
+@app.route('/upload-prescriptiontest4', methods=['POST'])
+def upload_prescription1():
+    if 'file' not in request.files:
+        return jsonify({"error": "No file provided"}), 400
+    file.save(filepath)
+    return jsonify({"message": "Uploaded successfully", "path": filepath}), 200
+
+
 # ---------------- Init ---------------- #
 
 if __name__ == '__main__':
