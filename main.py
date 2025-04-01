@@ -239,6 +239,7 @@ def upload_prescription1():
     return jsonify({"message": "Uploaded successfully", "path": filepath}), 200
 
 
+<<<<<<< HEAD
 @app.route('/upload-prescriptiontest3', methods=['POST'])
 =======
 @app.route('/upload-prescriptiontest4', methods=['POST'])
